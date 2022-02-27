@@ -1,7 +1,7 @@
-##Willkommen auf dem Github Space des KI Campus. 
-###Hier findest du zwei verschiedene Arten an Hardware 
+## Willkommen auf dem Github Space des KI Campus. 
+### Hier findest du zwei verschiedene Arten an Hardware 
 
-###Sensorkits
+### Sensorkits
 - Was ist der Unterschied, Vor und Nachteile;
 
 ### Grove Kit
