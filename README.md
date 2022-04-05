@@ -3,22 +3,17 @@ HTML Datei für den Vertiefungskurs der Umweltsensoren für den KI Campus
 # Willkommen auf dem Github Space des KI Campus.
 ###    Hier findest du zwei verschiedene Arten an Hardware
 
-## Sensorkits
-Was ist der Unterschied, Vor und Nachteilep
-
 ### Grove Kit
-Mainboard
-Sensoren
-Einkaufsliste
-Verkabelung
-Code
+##### Mainboard
+##### Sensoren
+##### Einkaufsliste
+##### Verkabelung
+##### Code
+Den Code für das Grove Kit findest du in der ZIP Datei "Grove_Kit_Code.zip" oben zum Herunterladen.
 
 ### Senesebox
-Mainboard
-Sensoren
-Einkaufsliste
-Verkabelung
-Code
-
-### Handysensoren
-Auflistung aller Verfügbaren Sensoren in Handys
+##### Mainboard
+##### Sensoren
+##### Einkaufsliste
+##### Verkabelung
+##### Code
