@@ -52,12 +52,16 @@ Das Grove Kit besteht aus 10 Modulen und dem Microcontroller Seeeduino Lotus. Be
 #### Einkaufsliste
 
 Das Grove Kit ist bei diversen Online-Anbietern zum Verkauf und kann bei folgenden Websites bestellt werden:
-- Seeedstudio.com: https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html
-- Amazon.de: https://www.amazon.de/seeed-studio-Beginner-Arduino-Starter/dp/B088GY8JLG
+
+[Seeedstudio.com](https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html)
+
+[Amazon.de](https://www.amazon.de/seeed-studio-Beginner-Arduino-Starter/dp/B088GY8JLG)
 
 Zusätzliche Module
-- Feinstaubsensor https://www.conrad.de/de/p/joy-it-sen-sds011-sensor-modul-1-st-1884873.html
-- SD Karten Modul https://www.conrad.de/de/p/micro-sd-card-reader-modul-mit-spi-schnittstelle-838242778.html
+
+[Feinstaubsensor](https://www.conrad.de/de/p/joy-it-sen-sds011-sensor-modul-1-st-1884873.html)
+
+[SD Karten Modul](https://www.conrad.de/de/p/micro-sd-card-reader-modul-mit-spi-schnittstelle-838242778.html)
 
 #### Verkabelung
 
@@ -70,6 +74,14 @@ Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits 
 | SD Modul TX | 19 |
 | Sound | A2  |
 
+#### Libaries
+
+#include "Arduino_SensorKit.h"
+#include <Wire.h>
+#include <SPI.h>
+#include <SD.h>
+#include <SDS011.h>
+#include <SparkFun_SCD30_Arduino_Library.h>
 
 #### Code
 Den Code für das Grove Kit findest du in der ZIP Datei "Grove_Kit_Code.zip" oben zum Herunterladen.
@@ -77,14 +89,24 @@ Den Code für das Grove Kit findest du in der ZIP Datei "Grove_Kit_Code.zip" obe
 #### Sonstiges
 
 Für eine noch detailiertere Beschreibung des Grove Beginner Kits ist folgender Lesson Guide zu empfehlen. 
-https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/#breakout-instruction
+
+[wiki Seed Studio](https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/#breakout-instruction)
 
 ### Senesebox
 
-Bild von Mainboard. 
+#### Microcontroller
 
-##### Mainboard
-##### Sensoren
-##### Einkaufsliste
-##### Verkabelung
-##### Code
+Bild von Mainboard.
+
+Der Microcontroller der Sensebox basiert auf dem ARM Cortex-M0+ Prozessor aus der SAM D21 Familie von Microchip. Dieser hat 4 digitale, 2 UART/serial und 5 I2C Schnittstellen. Außerdem verfügt die Sensebox über zwei weitere Schnittstellen, sogenannte BEEs, für das Speichern von Daten über die Cloud via Wifi und über eine SD Karte. Hierbei handelt es sich um MOSI/MISO und RX/TX Schnittstellen. 
+
+#### Sensoren
+
+#### Einkaufsliste
+#### Verkabelung
+#### Libaries
+
+
+Board Support Package Link der Sensebox: https://sensebox.github.io/books-v2/edu/en/erste-schritte/board-support-packages-installieren.html
+
+#### Code
