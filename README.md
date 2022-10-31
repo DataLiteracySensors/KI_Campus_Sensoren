@@ -239,4 +239,4 @@ Das [Board Support Package](https://sensebox.github.io/books-v2/edu/en/erste-sch
 
 #### Sonstiges
 
-Online ist eine hilfreiche [Dokumentation](https://sensebox.github.io/books-v2/edu/en/) der Sensebox zu finden. Hier werden auch Beispiele als auch detailiertere Beschreibungen zur Hardware geliefert. 
+Online ist eine hilfreiche [Dokumentation](https://sensebox.github.io/books-v2/edu/en/) der Sensebox zu finden. Hier werden Beispiele als auch detailiertere Beschreibungen zur Hardware geliefert. 
