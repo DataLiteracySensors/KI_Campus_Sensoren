@@ -5,12 +5,12 @@ Willkommen!
 
 Um Umweltdaten mit Sensoren erfassen und dokumentieren zu können, benötigen wir Hardware und Software. Mit diesem Reposotiry soll das Programmieren der Software als auch das Zusammensetzen der Hardware erleichtert werden. Hierfür besteht die Wahl zwischen zwei Anbieter. Sensebox und Grove Kit. 
 
-###   Welches Kit ist das Richtige für mich?
+##   Welches Kit ist das Richtige für mich?
 
 ![Spinnendiagram_Vergleich_Hardware_2@300x](https://user-images.githubusercontent.com/100515435/199057365-67ea04a7-ceb1-4e77-8f58-3876eeb12f09.png)
 
 
-### Grove Kit
+## Grove Kit
 #### Microcontroller
 
 Bild von Mainboard. 
@@ -76,6 +76,29 @@ Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits 
 
 #### Libaries
 
+```
+#include "Arduino_SensorKit.h"
+#include <Wire.h>
+#include <SPI.h>
+#include <SD.h>
+#include <SDS011.h>
+#include <SparkFun_SCD30_Arduino_Library.h>
+```
+
+#### Code
+Den Code für das Grove Kit findest du in der ZIP Datei "Grove_Kit_Code.zip" oben zum Herunterladen.
+```
+/*
+   SD Card Wiring:
+   MOSI - pin 11
+   MISO - pin 12
+   CLK - pin 13
+   CS - pin 10
+   !DHT pin 3 
+   SDSrx 18
+   SDStx 19
+*/
+
 #include "Arduino_SensorKit.h"
 #include <Wire.h>
 #include <SPI.h>
@@ -83,8 +106,78 @@ Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits 
 #include <SDS011.h>
 #include <SparkFun_SCD30_Arduino_Library.h>
 
-#### Code
-Den Code für das Grove Kit findest du in der ZIP Datei "Grove_Kit_Code.zip" oben zum Herunterladen.
+SDS011 my_sds;
+SCD30 airSensor;
+
+int chipSelectSD = 10;
+int micPin = A2;
+int lightPin = A3;
+int SDSrx = 18;
+int SDStx = 19;
+float p10,p25;
+int error;
+
+int micValue;
+int lightValue;
+int tempValue;
+int humidValue;
+int pressureValue;
+int co2Value;
+
+String dataString = "";
+
+void setup() {
+  Serial.begin(9600);
+  Wire.begin();
+
+  pinMode(micPin , INPUT);
+  pinMode(lightPin , INPUT);
+  my_sds.begin(SDSrx,SDStx);
+  Environment.begin();
+  Pressure.begin();
+  airSensor.begin();
+
+  Serial.print("Initializing SD card...");
+  if (!SD.begin(chipSelectSD)) {
+    Serial.println("Card failed, or not present");
+  }
+  Serial.println("card initialized.");
+}
+
+void loop() {
+  // reading sensors:
+  micValue = analogRead(micPin);
+  lightValue = analogRead(lightPin);
+  tempValue = Environment.readTemperature();
+  humidValue = Environment.readHumidity();
+  pressureValue = Pressure.readPressure();
+  co2Value = airSensor.getCO2();
+  error = my_sds.read(&p25,&p10);
+
+  // formatting output:
+  dataString = String(micValue) + "," +
+               String(lightValue) + "," +
+               String(tempValue) + "," +
+               String(humidValue) + "," +
+               String(pressureValue) + "," + 
+               String(co2Value) + "," + 
+               String(p10) + "," + 
+               String(p25)
+               ;
+
+  // writing to SD and Serial
+  File dataFile = SD.open("datalog.txt", FILE_WRITE);
+  if (dataFile) {
+    dataFile.println(dataString);
+    dataFile.close();
+    Serial.println(dataString);
+  }
+  else {
+    Serial.println("error opening datalog.txt");
+  }
+  delay(100);
+}
+```
 
 #### Sonstiges
 
@@ -92,7 +185,7 @@ Für eine noch detailiertere Beschreibung des Grove Beginner Kits ist folgender 
 
 [wiki Seed Studio](https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/#breakout-instruction)
 
-### Senesebox
+## Senesebox
 
 #### Microcontroller
 
@@ -101,6 +194,17 @@ Bild von Mainboard.
 Der Microcontroller der Sensebox basiert auf dem ARM Cortex-M0+ Prozessor aus der SAM D21 Familie von Microchip. Dieser hat 4 digitale, 2 UART/serial und 5 I2C Schnittstellen. Außerdem verfügt die Sensebox über zwei weitere Schnittstellen, sogenannte BEEs, für das Speichern von Daten über die Cloud via Wifi und über eine SD Karte. Hierbei handelt es sich um MOSI/MISO und RX/TX Schnittstellen. 
 
 #### Sensoren
+
+| Modul  | Interface |
+| ------------- | ------------- |
+| Light| I2C  |
+| Humidity Sensor| I2C  |
+| Temperature & Air Pressure Sensor|  	I2C  |
+| Feinstaub|  	UART/serial  |
+| Wifi |  	Bee1  |
+| SD Modul |  	Bee2  |
+
+
 
 #### Einkaufsliste
 #### Verkabelung
