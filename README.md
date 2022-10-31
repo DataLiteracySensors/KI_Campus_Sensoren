@@ -61,7 +61,7 @@ Zusätzliche Module
 
 #### Verkabelung
 
-Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits verkabelt sind. Jediglich der Feinstaub Sensor sowie das SD Modul müssen manuel angeschlossen werden. 
+Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits verkabelt sind. Jediglich der Feinstaub Sensor sowie das SD Modul müssen manuell angeschlossen werden. Aus debugging Gründen wurden im beigelegten Arduino Code das Mikrofon auf pin A2 verlegt. 
 
 | Modul  | Pin |
 | ------------- | ------------- |
@@ -69,7 +69,6 @@ Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits 
 | SD Modul RX | 18 |
 | SD Modul TX | 19 |
 | Sound | A2  |
-| Light| A3 |
 
 
 #### Code
