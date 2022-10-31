@@ -235,3 +235,8 @@ Es ist zu empfehlen das Kit als Gesamtes und keine Einzelteile zu erwerben. Dies
 Das [Board Support Package](https://sensebox.github.io/books-v2/edu/en/erste-schritte/board-support-packages-installieren.html) ist essentiell und muss vorher heruntergeladen werden.
 
 #### Code
+
+
+#### Sonstiges
+
+Online ist eine hilfreiche [Dokumentation](https://sensebox.github.io/books-v2/edu/en/) der Sensebox zu finden. Hier werden auch Beispiele als auch detailiertere Beschreibungen zur Hardware geliefert. 
