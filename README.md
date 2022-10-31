@@ -208,12 +208,30 @@ Der Microcontroller der Sensebox basiert auf dem ARM Cortex-M0+ Prozessor aus de
 
 #### Einkaufsliste
 
-Es ist zu empfehlen das Kit als gesammtes und keine Einzelteile zu erwerben. Dieses kann auf der [Website](https://sensebox.kaufen/product/sensebox-edu) der Sensebox im Shop erworben werden. 
+Es ist zu empfehlen das Kit als Gesammtes und keine Einzelteile zu erwerben. Dieses kann auf der [Website](https://sensebox.kaufen/product/sensebox-edu) der Sensebox im Shop erworben werden. 
 
 #### Verkabelung
+
 #### Libaries
 
+```
+#include <senseBoxIO.h>
+#include <WiFi101.h>
+#include <SPI.h>
+#include <Wire.h>
 
-Board Support Package Link der Sensebox: https://sensebox.github.io/books-v2/edu/en/erste-schritte/board-support-packages-installieren.html
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_HDC1000.h>
+#include <Adafruit_BMP280.h>
+#include <Adafruit_BME680.h>
+#include <VEML6070.h>
+#include <SDS011-select-serial.h>
+#include <SparkFun_SCD30_Arduino_Library.h>
+#include <LTR329.h>
+```
+
+Das [Board Support Package](https://sensebox.github.io/books-v2/edu/en/erste-schritte/board-support-packages-installieren.html) ist essentiell und muss vorher heruntergeladen werden.
 
 #### Code
