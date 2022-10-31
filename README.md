@@ -61,7 +61,7 @@ Zusätzliche Module
 
 #### Verkabelung
 
-Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits verkabelt sind. Jediglich der Feinstaub Sensor sowie das SD Modul müssen manuell angeschlossen werden. Aus debugging Gründen wurden im beigelegten Arduino Code das Mikrofon auf pin A2 verlegt. 
+Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits verkabelt sind. Jediglich der Feinstaub Sensor sowie das SD Modul müssen manuell angeschlossen werden. Aus debugging Gründen wurde im beigelegten Arduino Code das Mikrofon auf pin A2 verlegt. 
 
 | Modul  | Pin |
 | ------------- | ------------- |
@@ -80,6 +80,9 @@ Für eine noch detailiertere Beschreibung des Grove Beginner Kits ist folgender 
 https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/#breakout-instruction
 
 ### Senesebox
+
+Bild von Mainboard. 
+
 ##### Mainboard
 ##### Sensoren
 ##### Einkaufsliste
