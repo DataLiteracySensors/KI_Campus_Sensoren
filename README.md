@@ -66,7 +66,10 @@ Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits 
 | Modul  | Pin |
 | ------------- | ------------- |
 | Fine Dust Sensor| UART  |
-| SD Modul RX | D18 |
+| SD Modul RX | 18 |
+| SD Modul TX | 19 |
+| Sound | A2  |
+| Light| A3 |
 
 
 #### Code
