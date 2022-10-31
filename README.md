@@ -37,11 +37,17 @@ Das Grove Kit besteht aus 10 Modulen und dem Microcontroller Seeeduino Lotus. Be
 
 | Modul  | Interface |
 | ------------- | ------------- |
-| LED | Digital  |
 | Light| Analog  |
 | Sound | Analog  |
 | Temperature & Humidity Sensor| Digital  |
 | Air Pressure Sensor|  	I2C  |
+
+#### Zusätzliche Module
+
+| Modul  | Interface |
+| ------------- | ------------- |
+| Fine Dust Sensor| UART  |
+| SD Modul | UART |
 
 #### Einkaufsliste
 
@@ -49,11 +55,24 @@ Das Grove Kit ist bei diversen Online-Anbietern zum Verkauf und kann bei folgend
 - Seeedstudio.com: https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html
 - Amazon.de: https://www.amazon.de/seeed-studio-Beginner-Arduino-Starter/dp/B088GY8JLG
 
+Zusätzliche Module
+- Feinstaubsensor https://www.conrad.de/de/p/joy-it-sen-sds011-sensor-modul-1-st-1884873.html
+- SD Karten Modul https://www.conrad.de/de/p/micro-sd-card-reader-modul-mit-spi-schnittstelle-838242778.html
+
 #### Verkabelung
+
+Das Grove Beginner Kit hat den Vorteil, dass alle mitgelieferten Module bereits verkabelt sind. Jediglich der Feinstaub Sensor sowie das SD Modul müssen manuel angeschlossen werden. 
+
+| Modul  | Pin |
+| ------------- | ------------- |
+| Fine Dust Sensor| UART  |
+| SD Modul RX | D18 |
 
 
 #### Code
 Den Code für das Grove Kit findest du in der ZIP Datei "Grove_Kit_Code.zip" oben zum Herunterladen.
+
+#### Sonstiges
 
 Für eine noch detailiertere Beschreibung des Grove Beginner Kits ist folgender Lesson Guide zu empfehlen. 
 https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/#breakout-instruction
