@@ -207,6 +207,9 @@ Der Microcontroller der Sensebox basiert auf dem ARM Cortex-M0+ Prozessor aus de
 
 
 #### Einkaufsliste
+
+Es ist zu empfehlen das Kit als gesammtes und keine Einzelteile zu erwerben. Dieses kann auf der [Website](https://sensebox.kaufen/product/sensebox-edu) der Sensebox im Shop erworben werden. 
+
 #### Verkabelung
 #### Libaries
 
