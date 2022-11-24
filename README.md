@@ -236,6 +236,7 @@ Das [Board Support Package](https://sensebox.github.io/books-v2/edu/en/erste-sch
 
 #### Code
 
+Der Code wird bei der Regestrierung des Sensebox automatisch generiert. Gehe hierzu auf die [opensensesmap](https://opensensemap.org/), wähle die Sensoren aus, die du auch auf deiner Sensebox verkabelt hast und kopiere dir dann den generierten Code in die Ardunio IDE. Nun muss der Code nur noch kompeliert und auf das Board hochgeladen werden.
 
 #### Sonstiges
 
