@@ -13,7 +13,8 @@ Um Umweltdaten mit Sensoren erfassen und dokumentieren zu können, benötigen wi
 ## Grove Kit
 #### Microcontroller
 
-Bild von Mainboard. 
+![Screenshot 2022-11-24 144842](https://user-images.githubusercontent.com/100515435/203809473-abba7039-ff4d-4c32-94fb-83ef26ad030f.png)
+
 
 Das Grove Kit besteht aus 10 Modulen und dem Microcontroller Seeeduino Lotus. Bei dem Microcontroller handelt es sich genauergesagt um ein ATMEGA328 Mikrocontroller Entwicklungsboard. Seeeduino Lotus hat 14 digitale Ein-/Ausgänge (6 davon können PWM ausgeben) und 7 analoge Ein-/Ausgänge, einen Micro-USB-Anschluss, einen ICSP-Header, 12 Grove-Anschlüsse, einen Reset-Knopf.
 
@@ -189,7 +190,7 @@ Für eine noch detailiertere Beschreibung des Grove Beginner Kits ist folgender 
 
 #### Microcontroller
 
-Bild von Mainboard.
+![Screenshot 2022-11-24 144603](https://user-images.githubusercontent.com/100515435/203809417-e442aa8a-98eb-410e-a6ca-138ca97f7772.png)
 
 Der Microcontroller der Sensebox basiert auf dem ARM Cortex-M0+ Prozessor aus der SAM D21 Familie von Microchip. Dieser hat 4 digitale, 2 UART/serial und 5 I2C Schnittstellen. Außerdem verfügt die Sensebox über zwei weitere Schnittstellen, sogenannte BEEs, für das Speichern von Daten über die Cloud via Wifi und über eine SD Karte. Hierbei handelt es sich um MOSI/MISO und RX/TX Schnittstellen. 
 
