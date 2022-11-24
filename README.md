@@ -211,7 +211,7 @@ Der Microcontroller der Sensebox basiert auf dem ARM Cortex-M0+ Prozessor aus de
 Es ist zu empfehlen das Kit als Gesamtes und keine Einzelteile zu erwerben. Dieses kann auf der [Website](https://sensebox.kaufen/product/sensebox-edu) der Sensebox im Shop erworben werden. 
 
 #### Verkabelung
-
+Die Verkabelung der Sensebox könnt ihr auf der [Website der Sensebox](https://sensebox.github.io/books-v2/edu/en/erste-schritte/anschluss-und-verkabelung.html) oder auf der KI Campus Seite im *Kurs Data Literacy - Daten bereitstellen mit Sensoren* im [Modul 3](https://learn.ki-campus.org/courses/dali-sensoren-THK2021/items/H6wBCHDF9ODjiMzmIMnAI) finden.
 #### Libaries
 
 ```
